@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(https://cdn.motor1.com/images/mgl/G329mG/s1/audi-rs6-avant-performance.jpg);
+    background-size: cover;
+   background-position: center;
+    
+}
+.container{
+    height: 100%;
+    width: 100%;
+    
+    padding: 50px;
+    
+    
+}
+
+.right-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+.right-cont-top{
+    height: 25%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+   
+
+
+   
+}
+.right-cont-top-top h3{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.right-cont-top-btm{
+    margin-top: 10px;
+}
+.right-cont-btm-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.right-cont-btm-cont i{
+    font-size: 30px;
+}
