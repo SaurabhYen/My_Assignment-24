@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    
+    }
+    body{
+    height: 100vh;
+    width: 100vw;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXnNmUsgQlOkg4msUggnthWSY8OEM6jq3lOhAMBGCJA&s);
+        background-size: cover;
+        background-position: left;
+    }
+    .top-cont{
+        height: 30%;
+        width: 100%;
+        text-align: center;
+       
+    }
+    .top-cont img{
+        height: 90%;
+        width: 60%;
+        margin-top: 30px;
+        
+    }
+    .btm-cont{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        padding: 0px 10px 10px 10px;
+        
+    }
+    .btm-cont h3{
+        color: blueviolet;
+        font-weight: 500;
+    }
+    .btm-cont h1{
+        color: white;
+        /* font-weight: 500; */
+    }
+    .btm-cont p{
+        color: white;
+        font-weight: 300;
+    }
+    .btm-cont button{
+        background-color: burlywood;
+        padding: 5px 25px;
+        border-radius: 20px;
+        border: transparent;
+        font-weight: 500;
+        color: purple;
+    }
+
+
+    @media (min-width:600px) {
+        .container{
+        height: 100%;
+        width: 100%;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXnNmUsgQlOkg4msUggnthWSY8OEM6jq3lOhAMBGCJA&s);
+        background-size: cover;
+        background-position: left;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-cont{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .top-cont img{
+        height: 60%;
+        width: 90%;
+        
+    }
+    .btm-cont{
+        height: 60%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        padding-left: 100px;
+        padding-top: 10px;
+        
+    }
+    .btm-cont h3{
+        color: blueviolet;
+        font-weight: 700;
+    }
+    .btm-cont h1{
+        color: white;
+        font-weight: 700;
+    }
+    .btm-cont p{
+        color: white;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    }

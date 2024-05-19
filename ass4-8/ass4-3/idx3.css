@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+      
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    /* width: 100%; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    /* margin: 0 auto; */
+
+}
+.left-cont{
+    height: 100%;
+    width: 35%;
+    background-color: antiquewhite;
+    background: url(https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    color: yellow;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    display: none;
+}
+.left-cont-logo{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left-cont-logo i{
+    color: yellow;
+}
+.right-cont{
+    height: 100%;
+    width: 65%;
+    background-color: rgba(60, 7, 109, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+}
+.right-cont-t{
+    height: 15%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+.right-cont-t h1{
+    font-size: 15px;
+}
+.right-cont-b{
+    height: 60%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.right-cont-b-t{
+   height: 33.33%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   
+
+ 
+ 
+}
+.right-cont-b-t-l{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 11px;
+}
+.right-cont-b-t-l i{
+    color:purple;
+}
+.right-cont-b-t-r{
+    height: 100%;
+    width: 80%;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    
+}
+.right-cont-b-t-r h1{
+    color: black;
+   
+    
+}
+.right-cont-b-t-r p{
+    color: grey;
+}
+.right-cont-b-m{
+    height: 33.33%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+}
+.right-cont-b-b{
+    height: 33.33%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/* small sixe display start */
+
+@media (max-width:868px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    
+    }
+    .left-cont{
+        height: 40%;
+        width: 100%;
+        background-color: antiquewhite;
+        background: url(https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: center;
+        color: yellow;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        
+        
+    
+    
+        
+    }
+    .left-cont-logo{
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .right-cont{
+        height: 60%;
+        width: 100%;
+        background-color: rgba(60, 7, 109, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        
+        
+        
+    }
+
+    .right-cont-t{
+      height: 15%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      font-size: 10px;
+       
+    }
+    .right-cont-b{
+      height: 60%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    
+
+    }
+    .right-cont-b{
+        height: 80%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 5px;
+    }
+    .right-cont-b-t{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+     
+      
+      
+     }
+     .right-cont-b-m{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+     
+      
+      
+     }
+     .right-cont-b-b{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+     
+      
+      
+     }
+   
+    .right-cont-b-t-l{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        font-size: 20px;
+        height: 100%;
+        width: 10%;
+        margin-right: 10px;
+        margin-left: 10px;
+       
+        
+    }
+    .right-cont-b-t-l i{
+        color:purple;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size:25px;
+    }
+    .right-cont-b-t-r{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+      
+
+        
+        
+    }
+
+    .right-cont-b-t-r h1{
+       
+        font-size: 18px;
+        margin-top: 10px;
+        
+    }
+    .right-cont-b-t-r p{
+        font-size: 10px;
+       margin-top: 5px;
+        
+    }
+    
+}
+
+/* small sixe display end */
+
+/* large sixe display start */
+@media (min-width:869px) {
+    .left-cont{
+        height: 100%;
+        width: 35%;
+        background-color: antiquewhite;
+        background: url(https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: center;
+        color: yellow;
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    
+    
+        
+    }
+    .right-cont{
+        height: 100%;
+        width: 65%;
+        background-color: rgba(60, 7, 109, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+}

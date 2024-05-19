@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    max-width: 100vw;
+}
+
+input:checked .left-cont-nav{
+   left: -500px;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+.left-cont-nav{
+    height: 100%;
+    width: 20%;
+    /* width: 250px; */
+    background-color: darkblue;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display: none; */
+    
+    
+   
+}
+.h-nav{
+    /* height: 100%;
+    width: 20%;
+    background-color: darkblue;
+    position: fixed; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    
+}
+.h-nav .Logo{
+    padding: 20px;
+    text-align: left;
+    background-color: rgba(0, 0, 139,0.5);
+    color: aliceblue;
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+}
+.h-nav ul{
+    padding: 5px;
+    text-align: left;
+    list-style: none;
+  
+}
+.h-nav ul li{
+    padding: 15px;
+    /* border-bottom: 1px solid rgba(255, 255, 255,0.2); */
+    
+}
+.h-nav ul li:hover{
+    background-color: blue;
+}
+.h-nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.h-nav ul li a i{
+    /* padding: 10px; */
+    font-size: 20px;
+    margin-right: 5px;
+}
+.btm-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    color: aliceblue;
+}
+ .btm-cont img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+}
+.left-cont{
+    height: 100%;
+    width: 20%;
+   
+   
+}
+.right-cont{
+   height: 100%;
+   width: 80%;
+   padding: 10px 100px 0pc 15px;
+   
+  
+}
+.right-cont h1{
+    font-weight: 650;
+}
+.right-cont h3{
+    font-weight: 500;
+}
+.fav-sect{
+   height: 10%;
+   width: 100%;
+  
+}
+/* 
+.car-sec start */
+.car-sec{
+    height: 35%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.car-sec-cont{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ 
+}
+.car-sec-cont-l{
+    height:170px;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.car-sec-cont-l img{
+    height: 100%;
+    width: 100%;
+}
+.car-sec-cont-m{
+    height:170px;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+.car-sec-cont-m img{
+    height: 100%;
+    width: 100%;
+}
+.car-sec-cont-r{
+    height:170px;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.car-sec-cont-r img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* bike sec :start */
+.bike-sec{
+    height: 35%;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bike-sec-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   }
+   .bike-sec-cont-l{
+       height:170px;
+       width: 200px;
+       border-radius: 15px;
+       overflow: hidden;
+       
+   }
+   .bike-sec-cont-l img{
+       height: 100%;
+       width: 100%;
+   }
+   .bike-sec-cont-m{
+       height:170px;
+       width: 200px;
+       border-radius: 15px;
+       overflow: hidden;
+      
+   }
+   .bike-sec-cont-m img{
+       height: 100%;
+       width: 100%;
+   }
+   .bike-sec-cont-r{
+       height:170px;
+       width: 200px;
+       border-radius: 15px;
+       overflow: hidden;
+   }
+   .bike-sec-cont-r img{
+       height: 100%;
+       width: 100%;
+   }
+   
+
+
+/* house sec start */
+.Houses-sec{
+    height: 35%;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Houses-sec-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   }
+   .Houses-sec-cont-l{
+       height:170px;
+       width: 200px;
+       border-radius: 15px;
+       overflow: hidden;
+       
+   }
+   .Houses-sec-cont-l img{
+       height: 100%;
+       width: 100%;
+   }
+   .Houses-sec-cont-m{
+       height:170px;
+       width: 200px;
+       border-radius: 15px;
+       overflow: hidden;
+      
+   }
+   .Houses-sec-cont-m img{
+       height: 100%;
+       width: 100%;
+   }
+   .Houses-sec-cont-r{
+       height:170px;
+       width: 200px;
+       border-radius: 15px;
+       overflow: hidden;
+   }
+   .Houses-sec-cont-r img{
+       height: 100%;
+       width: 100%;
+   }
+
+/*   
+   @media  (max-width:1030px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .small-size-nav{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: darkblue;
+    }
+    .small-size-nav h1{
+        color: aliceblue;
+        font-weight: 500;
+    }
+      .small-size-nav ul{
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+
+    }
+    .small-size-nav ul li{
+             color: antiquewhite;
+    }
+    .small-size-nav ul li a{
+        color: antiquewhite;
+        text-decoration: none;
+        margin-right: 10px;
+    } 
+    .right-cont{
+    max-height: 100%;
+    width: 100%;
+    padding: 5px;
+   
+    
+   
+     }
+     
+     .btm-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 20px;
+        color: aliceblue;
+    }    
+    .left-cont{
+        display: none;
+    }
+     
+   } */

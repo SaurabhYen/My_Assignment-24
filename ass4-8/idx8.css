@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* small size 
+screen */
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    display: none;
+   
+}
+  /* m size sctreen */
+  .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    display: none;
+   
+} 
+
+  /* l size screen */
+
+  .container{
+        
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: none;
+    
+   
+}
+.top-cont{
+    height: 50%;
+    width: 100%;
+    background: url(https://www.bankrate.com/2019/10/11115713/GettyImages-595504906.jpg?auto=webp&optimize=high);
+    background-size: cover;
+    background-position: right;
+
+
+    
+}
+.top-cont-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.top-cont-menu{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  padding-top: 20px;
+}
+.top-cont-logo{
+
+   
+}
+.top-cont-logo i{
+    font-size: 40px;
+    padding: 5px;
+    color: rgb(64, 94, 227);
+}
+.btm-cont{
+    height: 50%;
+    width: 100%;
+    font-size:12px ;
+    padding: 10px;
+}
+.btm-cont-top{
+    height: 50%;
+    width: 100%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btm-cont-top h2{
+   
+    font-weight: 700;
+}
+
+
+.btm-cont-btm{
+    height: 50%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btm-cont-btm h3{
+    color: rgb(87, 87, 241);
+    font-weight: 500;
+}
+.btm-cont-btm-d1{
+    height: 50%;
+    width: 50%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.btm-cont-btm-d2{
+    height: 50%;
+    width: 50%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.btm-cont-btm-d3{
+    height: 50%;
+    width: 50%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.btm-cont-btm-d4{
+    height: 50%;
+    width: 50%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+
+@media (max-width:620px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+       
+       
+    } 
+}
+
+@media(min-width:620px)
+{
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+       
+    }
+    .top-cont{
+        height: 100%;
+        width: 40%;
+        background: url(https://www.bankrate.com/2019/10/11115713/GettyImages-595504906.jpg?auto=webp&optimize=high);
+        background-size: cover;
+        background-position: center;
+    
+    
+        
+    }
+    .top-cont-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+    }
+    .btm-cont{
+        height: 100%;
+        width: 60%;
+        font-size: small;
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 50px 50px 50px 50px;
+
+    }
+    .btm-cont h2{
+        font-size: 40px;
+    }
+    .btm-cont p{
+        
+    }
+    
+
+    .btm-cont-btm{
+        height: 50%;
+        width: 100%;
+        font-size: small;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .btm-cont-btm h3{
+        font-weight: 700;
+    }
+    .btm-cont-btm-d1{
+        height: 30%;
+        width: 50%;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .btm-cont-btm-d2{
+        height: 30%;
+        width: 50%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .btm-cont-btm-d3{
+        height: 30%;
+        width: 50%;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .btm-cont-btm-d4{
+        height: 30%;
+        width: 50%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+}
+
+@media (min-width:882px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+       
+    }
+    .top-cont{
+        height: 100%;
+        width: 40%;
+        background: url(https://www.bankrate.com/2019/10/11115713/GettyImages-595504906.jpg?auto=webp&optimize=high);
+        background-size: cover;
+        background-position: center;
+    
+    
+        
+    }
+    .top-cont-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+    }
+    .btm-cont{
+        height: 100%;
+        width: 60%;
+        font-size: small;
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 50px 200px 50px 50px;
+
+    }
+    .btm-cont h2{
+        font-size: 40px;
+    }
+    
+
+    .btm-cont-btm{
+        height: 50%;
+        width: 100%;
+        font-size: larger;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .btm-cont-btm h3{
+        font-weight: 700;
+    }
+    .btm-cont-btm-d1{
+        height: 30%;
+        width: 50%;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .btm-cont-btm-d2{
+        height: 30%;
+        width: 50%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .btm-cont-btm-d3{
+        height: 30%;
+        width: 50%;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .btm-cont-btm-d4{
+        height: 30%;
+        width: 50%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+   
+}

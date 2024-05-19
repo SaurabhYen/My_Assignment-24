@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(163, 163, 238);
+    
+  
+}
+.container{
+    height: 100%;
+    width: 100%;
+    
+    padding: 20px;
+  
+}
+
+.top-cont{
+   height: 300%;
+   width: 100%;
+   background-color: white;
+   border-radius: 20px;
+   padding: 15px;
+ 
+   
+}
+.top-cont-heading{
+    height: 9%;
+    width: 100%;
+}
+.top-cont h4{
+    text-align: center;
+}
+.top-cont h1{
+    font-weight: 600;
+    text-align: start;
+}
+.top-cont-img-sec{
+    height: 75%;
+    width: 100%;
+    padding-bottom: 20px;
+    
+
+}
+.top-cont-img-sec h1{
+    font-size: 25px;
+    color: white;
+    font-weight: 550;
+}
+.top-cont-img-sec .img1{
+    height: 19%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 35px;
+    margin-bottom: 20px;
+  
+    background-image: url(https://thumbs.dreamstime.com/b/aeroplane-cloudy-day-8201396.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-cont-img-sec button{
+    width: 100px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.top-cont-img-sec .img2{
+    height: 19%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: url(https://images.unsplash.com/photo-1572373696785-e8bd92718f65?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZWV8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-size: cover;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-cont-img-sec button{
+    width: 100px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.top-cont-img-sec .img3{
+    height: 19%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: url(https://images.herzindagi.info/image/2024/Apr/water-rich-fruits-for-summer.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-cont-img-sec button{
+    width: 100px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.top-cont-img-sec .img4{
+    height: 19%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: url(https://images.herzindagi.info/image/2023/Oct/best-laptops-2.jpg);
+    background-position: left;
+    background-size: cover;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-cont-img-sec button{
+    width: 100px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.top-cont-img-sec .img5{
+    height: 19%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2x/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-cont-img-sec button{
+    width: 100px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.top-cont-img-sec .img6{
+    height: 19%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 10px;
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGfUQtwF55t1YmZ2y21FcujfiLmeElMh9qOUsZSnTBg&s);
+    background-position: center;
+    background-size: cover;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.top-cont-img-sec button{
+    width: 100px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.large-top-cont-img-sec{
+    display: none;
+}
+
+
+
+@media (min-width:450px) {
+    .top-cont-img-sec{
+        height: 75%;
+        width: 100%;
+        padding-bottom: 20px;
+        display: none;
+    
+    }
+    .top-cont{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        padding: 15px;
+      
+        
+     }
+     .top-cont-heading{
+        height: 15%;
+        width: 100%;
+    }
+
+    .top-cont h4{
+        text-align: center;
+    }
+    .top-cont h1{
+        font-weight: 600;
+        text-align: center;
+    }
+    .large-top-cont-img-sec{
+        display: block;
+        height: 85%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+
+    
+   .large-top-cont-img-sec h1{
+    font-size: 25px;
+    color: white;
+    font-weight: 550;
+}
+.large-top-cont-img-sec .img1{
+    height: 21.25%;
+    width: 100%;
+   
+  
+    background-image: url(https://thumbs.dreamstime.com/b/aeroplane-cloudy-day-8201396.jpg);
+    background-position: center;
+    background-size: cover;
+    /* padding:15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border-radius: 15px;
+}
+.large-top-cont-img-sec button{
+    
+    padding: 3px 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.img2-3cont{
+    height: 21.25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.large-top-cont-img-sec .img2{
+    height: 100%;
+    width: 100%;
+   
+    background-image: url(https://images.unsplash.com/photo-1572373696785-e8bd92718f65?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZWV8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-size: cover;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.large-top-cont-img-sec .img3{
+    height: 100%;
+    width: 100%;
+   
+    background-image: url(https://images.herzindagi.info/image/2024/Apr/water-rich-fruits-for-summer.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.large-top-cont-img-sec .img4{
+    height: 21.25%;;
+    width: 100%;
+ 
+    background-image: url(https://images.herzindagi.info/image/2023/Oct/best-laptops-2.jpg);
+    background-position: left;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.img5-6cont{
+    height: 21.25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.large-top-cont-img-sec .img5{
+    height: 100%;
+    width: 100%;
+   
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2x/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.large-top-cont-img-sec .img6{
+    height: 100%;
+    width: 100%;
+   
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGfUQtwF55t1YmZ2y21FcujfiLmeElMh9qOUsZSnTBg&s);
+    background-position: center;
+    background-size: cover;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border-radius: 15px;
+  
+}
+
+
+}
