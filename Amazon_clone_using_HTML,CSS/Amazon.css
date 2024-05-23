@@ -253,8 +253,37 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    animation: imgageAnimation 15s ease infinite;
+    animation-delay: 2s;
+
+
    
 
+}
+@keyframes imgageAnimation {
+    0%{
+        background-image: url(assets/amznbg.jpg);
+       
+    }
+    25%{
+        background-image: url(assets/amznbg2.jpg);
+        
+    }
+    50%{
+        background-image: url(assets/amznbg3.jpg);
+       
+       
+    }
+    75%{
+        background-image: url(assets/amznbg4.jpeg);
+        
+        
+    }
+    100%{
+        background-image: url(assets/amznbg5.jpg);
+        
+        
+    }
 }
 .cards-section {
     
