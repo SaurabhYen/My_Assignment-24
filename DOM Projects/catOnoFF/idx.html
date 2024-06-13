@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT ON OFF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+        }
+        .main-cont{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #cat{
+            height: 300px;
+            width: 250px;
+
+        }
+        #light{
+            height:150px;
+            width: 150px;
+        }
+        button{
+            padding: 10px 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+
+
+        <img id="light" src="images/bulbon.jpg" alt="light">
+        
+        <img id="cat" src="images/black-cat-cartoon-illustration-png.webp" alt="cat">
+        
+       <div class="">
+            <button id="btn1" onclick="offbtn()">OFF</button>
+            <button id="btn2" onclick="oNbtn()">ON</button>
+       </div>
+
+
+    </div>
+
+    <script src="idx.js"></script>
+</body>
+</html>
