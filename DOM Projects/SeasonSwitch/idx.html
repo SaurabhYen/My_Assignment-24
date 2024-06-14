@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season Switcher</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .main-body{
+            height: 60%;
+            width: 30%;
+           
+        }
+        .img-container{
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+          
+        }
+        
+        img{
+            height: 100%;
+            width: 100%;
+    
+        }
+        .btn-sect{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: last baseline;
+        }
+        button{
+            width: 23%;
+            height: 80%;
+            border-radius: 10px;
+            border: transparent;
+            font-size: 15px;
+            color: white;
+        }
+        #Spring{
+              background-color: green;
+        }
+        #Summer{
+            background-color: rgb(203, 203, 119);
+        }
+        #Auntumn{
+            background-color: red;
+        }
+        #Winter{
+            background-color: rgb(21, 135, 206);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-body">
+              <div class="img-container" id="img-container">
+                    <img id="changeImg" src="images/seasonimg.webp" alt="Season_Img">
+              </div>
+              <div class="btn-sect">
+                <button id="Spring">Spring</button>
+                <button id="Summer">Summer</button>
+                <button id="Auntumn">Auntumn</button>
+                <button id="Winter">Winter</button>
+              </div>
+    </div>
+   
+    <script src="season.js"></script>
+</body>
+</html>

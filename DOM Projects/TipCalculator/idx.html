@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-cont{
+            height: 90%;
+            width: 30%;
+            background-color: rgb(190, 206, 234);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        img{
+            height: 20%;
+            width: 100%;
+        }
+        h1{
+            color: rgb(105, 105, 188);
+        }
+        .form{
+            height: 70%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-evenly;
+        }
+        .inp1{
+            height: 24%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-evenly;
+        }
+        input{
+            height: 40%;
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: 2px;
+            padding: 5px;
+        }
+        #btn{
+            align-self: center;
+            padding: 10px 20px;
+            background-color: rgb(63, 63, 242);
+            color: white;
+            border-radius: 5px;
+            border: transparent;
+        }
+        span{
+            align-self: center;
+            font-size: larger;
+            font-weight: 600;
+            color: red;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+            <img src="images/calci.jpg"  alt="">
+            <h1>Tip Calculator</h1>
+            <div class="form">
+                <div class="inp1">
+                      <h3>BILL AMOUNT</h3>
+                      <input type="number" name="" id="bill_Amount">
+                </div>
+                <div class="inp1">
+                     <h3>PERCENTAGE TIP</h3>
+                     <input type="number" name="" id="tip_percent">
+                </div>
+                <div class="inp1">
+                    <h3>TIP AMOUNT</h3>
+                    <input type="number" name="" id="tip_Amount">
+                </div>
+                <div class="inp1">
+                    <h3>TOTAL</h3>
+                    <input type="number" name="" id="total">
+                </div>
+                <div class="inp1">
+                    <button id="btn">CALCULATE</button>
+                    <span id="span"></span>
+                </div>
+            </div>
+    </div>
+      
+
+
+
+    <script src="tipcal.js"></script>
+</body>
+</html>

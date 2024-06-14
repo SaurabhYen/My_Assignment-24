@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-body{
+            height: 70%;
+            width: 30%;
+            background-color: darkgrey;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .img-cont{
+            height: 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        p{
+            margin-top: 10px;
+        }
+        .btn-sec{
+            width: 30%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 10px 15px;
+            font-size: 15px;
+            font-weight: 500;
+            border: transparent;
+            background-color: white; 
+        }
+        span{
+            padding: 0px 8px;
+            font-size: 15px;
+            font-weight: 600; 
+            background-color: white; 
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        #span{
+            color: red;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-body">
+                  <h1>Sizing An Image</h1>
+                    <p id="span"></p>
+                  <div class="img-cont">
+                    <img id="image" src="image/uPuppy.jpg" alt="">
+                     <p id="para">width:200px</p>
+                  </div>
+                  <div class="btn-sec">
+                    <button id="minusbtn">-</button>
+                    <span >5px</span>
+                    <button id="plusbtn">+</button>
+
+                  </div>
+    </div>
+    
+
+    <script src="size.js"></script>
+</body>
+</html>
