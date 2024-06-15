@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(118, 150, 167);
+        }
+        .main-body{
+            min-height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .inp-sec{
+            height: 80%;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .inp1{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 600;
+            color: gray;
+            margin-bottom: 2px;
+        }
+        input{
+            height: 80%;
+            border-radius: 5px;
+            border: 1px solid grey;
+            color: black;
+            padding-left: 10px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        #applyBtn{
+            align-self: flex-end;
+            padding: 7px 15px;
+            font-size: 20px;
+            border: transparent;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+        .custombtn{
+            width: 100%;
+            
+            /* height: 30%; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <h1>Button Maker</h1>
+              <div class="inp-sec">
+                   <div class="inp1">
+                       <p>BACKGROUND COLOR</p>
+                       <input id="background_color" type="text">
+                    </div>
+                    <div class="inp1">
+                       <p>FONT COLOR</p>
+                       <input id="font_color" type="text">
+                    </div>
+                    <div class="inp1">
+                        <p>FONT SIZE (in px)</p>
+                        <input id="font_size" type="text/number">
+                    </div>
+                    <div class="inp1">
+                        <p>FONT WEIGHT</p>
+                        <input id="font_weight" type="number">
+                    </div>
+                    <div class="inp1">
+                        <p>PADDING (in px)</p>
+                        <input id="padding" type="text/number">
+                    </div>
+                    <div class="inp1">
+                        <p>BACKGROUND RADIUS (in px)</p>
+                        <input id="bg_radius" type="text/number">
+                    </div>
+                    <div class="inp1">
+                        <button id="applyBtn">Apply</button>
+                    </div>
+                    <div class="custombtn">
+                        <button id="custombtn">Custom Button</button>
+                    </div>
+
+           </div>
+
+    </div>
+    <script src="btnmaker.js"></script>
+</body>
+</html>

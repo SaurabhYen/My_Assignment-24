@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            
+        }
+        .main-body{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(207, 247, 248);
+            
+        }
+        .head-sec{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            color: black;
+        }
+        img{
+            height: 40%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .btnsec{
+            width: 100%;
+            height: 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: 10px;
+            /* background-color: white; */
+            
+        }
+        button{
+            width: 33%;
+            height: 100%;
+            border-radius: 5px;
+            border: transparent;
+            color: black;
+            font-style: 20px;
+            font-weight: 600;
+            background-color: rgb(188, 182, 182);
+        }
+        #Aboutbtn{
+            background-color: white;
+        }
+        #para{
+            text-align: justify;
+            height: 30%;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-body">
+
+        <div class="head-sec">
+            <h1>Varanasi</h1>
+            <p>The city is very commonly referred to as City of Temples,Holy City of India ,religious Capital Of India,and City of Learning.</p>
+        </div>
+
+        <img src="image/varanasi.jpg" alt="Varanasi">
+
+        <div class="btnsec">
+            <button id="Aboutbtn">About</button>
+            <button id="timetoVisit">Time to visit</button>
+            <button id="attractiobtn">Attraction</button>
+        </div>
+        <p id="para">
+            Varanasi is one of the oldest continuously inhabited cities in the world. It was one of the first major urban settlements in the middle Ganges valley. By the 2nd millennium BCE Varanasi was a seat of Vedic religion and philosophy and was also a commercial and industrial centre famous for its muslin and silk fabrics, perfumes, ivory works, and sculpture. It was the capital of the kingdom of Kashi during the time of the Buddha (6th century BCE), who gave his first sermon nearby at Sarnath.
+        </p>
+      
+
+    </div>
+
+    <script>
+
+        let AboutbtnEl=document.getElementById('Aboutbtn');
+        let timetoVisitEl=document.getElementById('timetoVisit');
+        let attractiobtnEl=document.getElementById('attractiobtn');
+        let paraEl=document.getElementById('para');
+
+        AboutbtnEl.addEventListener('click',()=>{
+            AboutbtnEl.style.backgroundColor='white';
+            timetoVisitEl.style.backgroundColor='grey';
+            attractiobtnEl.style.backgroundColor='grey';
+
+            paraEl.innerText='Varanasi is one of the oldest continuously inhabited cities in the world. It was one of the first major urban settlements in the middle Ganges valley. By the 2nd millennium BCE Varanasi was a seat of Vedic religion and philosophy and was also a commercial and industrial centre famous for its muslin and silk fabrics, perfumes, ivory works, and sculpture. It was the capital of the kingdom of Kashi during the time of the Buddha (6th century BCE), who gave his first sermon nearby at Sarnath.';
+
+        });
+        timetoVisitEl.addEventListener('click',()=>{
+            AboutbtnEl.style.backgroundColor='grey';
+            timetoVisitEl.style.backgroundColor='white';
+            attractiobtnEl.style.backgroundColor='grey';
+
+            paraEl.innerText='The best time to explore Varanasi tourist places is between the months of October and February when Varanasi temperature dips. On the other hand, the monsoon months are July, August, and September. Varanasi weather rises exponentially during the summer season, starting from March and lasting till June.';
+
+        })
+
+        attractiobtnEl.addEventListener('click',()=>{
+            AboutbtnEl.style.backgroundColor='grey';
+            timetoVisitEl.style.backgroundColor='grey';
+            attractiobtnEl.style.backgroundColor='white';
+
+            paraEl.innerText="Also known as the Golden Temple, it is dedicated to Lord shiva, the presiding deity of the city. Varanasi is Said to be the point at which the first jyotirlinga, the fiery pillar of light by which shiva manifested has supremacy over others gods, broke through the Earth's crust and flared towards the heavens.";
+
+        })
+
+       
+    </script>
+</body>
+</html>

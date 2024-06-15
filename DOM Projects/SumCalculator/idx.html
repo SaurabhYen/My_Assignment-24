@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Sum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-body{
+            height: 90%;
+            width: 30%;
+            
+        }
+        img{
+            height: 30%;
+            width: 100%;
+        }
+        span{
+            border: 5px solid rgb(201, 187, 187);
+            padding: 10px;
+            background-color: rgb(209, 198, 198);
+            color: black;
+            border-radius: 5px;
+            font-size: larger;
+            font-weight: 900;
+        }
+        i{
+            padding: 10px;
+            font-size: 20px;
+            color: gray;
+        }
+        .btn-sec{
+            height: 50%;
+            width: 100%;
+            background-color: rgb(200, 241, 241);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .topbtn{
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            padding: 5px 0px;
+            width: 70px;
+            border: 5px solid rgb(201, 187, 187);
+            background-color: rgb(209, 198, 198);
+            color: black;
+            border-radius: 5px;
+            font-size: larger;
+            font-weight: 900;
+        }
+        .btnbtm{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            color: white;
+            background-color: rgb(31, 83, 196);
+            padding: 10px 15px;
+            border: transparent;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        
+        #Para{
+            margin-top: 20px;
+           text-align: center;
+           width: 100%;
+           font-size: 20px;
+           font-weight: 600;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-body">
+              <img  src="images/calbgimg.jpg" alt="calbgimg">
+              <div class="btn-sec">
+                <div class="topbtn">
+                    <Span id="number1"></Span> 
+                    <i class="fa-solid fa-plus"></i>
+                    <span id="number2"></span>
+                    <i class="fa-solid fa-equals"></i>
+                    <input type="number" name="" id="userInp">
+                </div>
+                <div class="btnbtm">
+                    <button id="checkbtn">Check</button>
+                    <button id="restartbtn">Restart</button>
+                </div>
+                <p id="Para"></p>
+              </div>
+    </div>
+    
+    <script src="sumCal.js"></script>
+</body>
+</html>
