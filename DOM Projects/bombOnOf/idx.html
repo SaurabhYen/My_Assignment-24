@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Blast Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 70%;
+            width: 30%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        input{
+            width: 80%;
+            height: 8%;
+            border-radius: 10px;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        button{
+            padding: 7px 15px ;
+            border-radius: 4px;
+            border: 2px solid red;
+            font-size: 15px;
+            font-weight: 500;
+            color: red;
+            background-color: white;
+        }
+        #para1{
+                color: red;
+                font-weight: 700;
+                font-size: 20px;
+        }
+        span{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        #btnrestart{
+            border: 2px solid blue;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Save The City Game</h1>
+        <span id="timer">10</span>
+        <p id="para1"></p>
+        <input type="text/number" name="" id="inputPass">
+        <img id="bombimg" src="image/bombon.jpg" alt="">
+        <div class="btn-sec">
+            <button id="btndefuse">Defuse</button>
+            <button id="btnrestart">Restart</button>
+        </div>
+    </div>
+
+
+    <script>
+        let para1El=document.getElementById('para1');
+        let inputPassEl=document.getElementById('inputPass');
+        let bombimgEl=document.getElementById('bombimg');
+        let btndefuseEl=document.getElementById('btndefuse');
+        let timerEl=document.getElementById('timer');
+        let btnrestartEl=document.getElementById('btnrestart');
+
+
+        let TimerCount=10;
+
+     
+                 
+        let timeOutFunction= setInterval(() => {
+               TimerCount=TimerCount-1;
+               timerEl.innerHTML=TimerCount;
+           
+
+                if(TimerCount===0){
+                        para1El.style.color='red'
+                        para1El.innerHTML='TimeOut ! You Lost The City';
+                        bombimgEl.src='image/bombblast.jpeg'
+                        clearInterval(timeOutFunction);
+                }
+
+            }, 1000);
+
+     
+       
+      let isTrue=true;
+
+        btndefuseEl.addEventListener('click',()=>{
+           if(TimerCount>0){
+
+                    if(inputPassEl.value==='defuse'){
+                                para1El.innerHTML='You Save The City';
+                                para1El.style.color='green'
+                                bombimgEl.src='image/bombof.jpg'
+                                clearInterval(timeOutFunction);
+                                console.log(TimerCount);
+                                isTrue=false;
+                                
+                                
+                                
+                    }
+                    else if(inputPassEl.value==='' && isTrue==true ){
+                                para1El.innerHTML='Enter Valid Password';
+                                para1El.style.color='red'
+                                bombimgEl.src='image/bombon.jpg'
+                              
+                    }
+                    else if(inputPassEl.value!=='defuse' &&  isTrue==true){
+                                para1El.innerHTML='Wrong Password ! Enter Again';
+                                para1El.style.color='red'
+                                bombimgEl.src='image/bombon.jpg'
+                               
+                    }
+                   
+      
+           }
+        });
+
+        btnrestartEl.addEventListener('click',()=>{
+           
+            clearInterval(timeOutFunction);
+             bombimgEl.src='image/bombon.jpg'
+            isTrue=true;
+            TimerCount=11;
+            para1El.innerHTML='';
+            inputPassEl.value='';
+            timeOutFunction=setInterval(() => {
+                
+                TimerCount=TimerCount-1;
+                timerEl.innerHTML=TimerCount;
+
+                if(TimerCount===0){
+                        para1El.innerHTML='TimeOut ! You Lost The City';
+                        para1El.style.color='red'
+                        bombimgEl.src='image/bombblast.jpeg'
+                        clearInterval(timeOutFunction);
+                }
+
+           }, 1000);
+
+           
+            
+        })
+
+    
+       
+
+       
+
+
+
+
+    </script>
+</body>
+</html>
