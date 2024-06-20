@@ -94,7 +94,7 @@
         let BtnEl=document.getElementById('Btn');
         let paraEl=document.getElementById('para');
 
-        let array=[];
+        // let array=[];
         BtnEl.addEventListener('click',()=>{
             
             if(InputEl.value===''){
@@ -102,24 +102,21 @@
             }
             else
             {
-                   array.push(InputEl.value);
-                   paraEl.innerHTML='';
-                   InputEl.value='';
+                //    array.push(InputEl.value);
+                  
 
               let listItemEl=document.createElement('li');
 
               let RndmWord=Math.floor(Math.random()*30)+7;
               
-              listItemEl.style.fontSize=`${RndmWord}px`;
+                  listItemEl.style.fontSize=`${RndmWord}px`;
 
-              let newItm=listItemEl.append( array.slice(array.length-1,array.length));
+            //   let newItm=listItemEl.append( array.slice(array.length-1,array.length));
+            let newItm=listItemEl.append( InputEl.value);
+                wordEl.appendChild(listItemEl);
+                paraEl.innerHTML='';
+                InputEl.value='';
 
-                  
-           
-              wordEl.appendChild(listItemEl);
-              
-             
-       
             }
              
             console.log(array);
