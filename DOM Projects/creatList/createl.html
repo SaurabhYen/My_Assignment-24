@@ -68,11 +68,11 @@
 
         <div class="wordEl" id="">
             <ul id="wordEl">
-                <li>hello</li>
-                <li>hi</li>
-                <li>Awsome</li>
-                <li>beautiful</li>
-                <li>great</li>
+                <li style="font-size: 10px;">hello</li>
+                <li style="font-size: 15px;">hi</li>
+                <li style="font-size: 20px;" >Awsome</li>
+                <li style="font-size: 13px;">beautiful</li>
+                <li style="font-size: 30px;">great</li>
 
             </ul>
 
@@ -108,7 +108,13 @@
 
               let listItemEl=document.createElement('li');
 
+              let RndmWord=Math.floor(Math.random()*30)+7;
+              
+              listItemEl.style.fontSize=`${RndmWord}px`;
+
               let newItm=listItemEl.append( array.slice(array.length-1,array.length));
+
+                  
            
               wordEl.appendChild(listItemEl);
               
